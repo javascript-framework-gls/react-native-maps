@@ -29,13 +29,18 @@ class AnimatedMarkers extends React.Component {
     };
   }
 
-  animate() {
+  componentDidMount() {
+    this.animate();
+  }
+
+  animate = () => {
     const { coordinate } = this.state;
     coordinate.timing({
       latitude: LATITUDE + ((Math.random() - 0.5) * (LATITUDE_DELTA / 2)),
       longitude: LONGITUDE + ((Math.random() - 0.5) * (LONGITUDE_DELTA / 2)),
-    }).start();
-  }
+      duration: 5000,
+    }).start(this.animate);
+  };
 
   render() {
     return (

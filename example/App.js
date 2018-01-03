@@ -134,7 +134,7 @@ class App extends React.Component {
       [PolylineCreator, 'Polyline Creator', true],
       [GradientPolylines, 'Gradient Polylines', true],
       [AnimatedViews, 'Animating with MapViews'],
-      [AnimatedMarkers, 'Animated Marker Position'],
+      [AnimatedMarkers, 'Animated Marker Position', true],
       [Callouts, 'Custom Callouts', true],
       [Overlays, 'Circles, Polygons, and Polylines', true],
       [DefaultMarkers, 'Default Markers', true],
